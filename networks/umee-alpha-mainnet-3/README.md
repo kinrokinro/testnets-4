@@ -60,7 +60,7 @@ rm -r $HOME/peggo
 git clone https://github.com/umee-network/peggo.git
 cd peggo
 git pull
-git checkout tags/v0.1.0
+git checkout tags/v0.1.1
 make install
 peggo version
 ```
