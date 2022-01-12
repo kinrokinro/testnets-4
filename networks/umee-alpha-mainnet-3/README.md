@@ -95,7 +95,7 @@ umeed gentx wallet 10000000uumee --chain-id=umee-alpha-mainnet-3 --moniker="$UME
   git clone https://github.com/<your-github-username>/testnets umee-testnets
   ```
 
-- Copy the generated gentx json file to `<repository_path>/uni-1/gentx/`
+- Copy the generated gentx json file to `$HOME/umee-testnets/networks/umee-alpha-mainnet-3/gentxs`
 
   ```bash
   cp $HOME/.umee/config/gentx/gentx-*.json $HOME/umee-testnets/networks/umee-alpha-mainnet-3/gentxs
