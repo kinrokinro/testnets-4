@@ -1,5 +1,7 @@
 # Umee Gravity Wars Testnet Week 5(`umee-alpha-mainnet-3`)
 
+#War Zone!
+
 ## Hardware Requirements
 * **Minimum**
   * 4 GB RAM
