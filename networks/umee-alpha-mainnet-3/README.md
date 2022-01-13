@@ -75,13 +75,13 @@ UMEE_INTERNAL_MONIKER=$(hostname) # or what you prefer
 umeed init --overwrite $UMEE_INTERNAL_MONIKER --chain-id umee-alpha-mainnet-3
 ```
 ### Create genesis account
-#### ⚠️ Do not change the initial balance, it will cost you spot in this testnet.
+#### ⚠️ Do not change the initial balance, it will cost you spot in this week 5.
 ```bash
-umeed add-genesis-account wallet 1000000000uumee
+umeed add-genesis-account wallet 11000000uumee
 ```
 ### Create gentx
-#### ⚠️ Do not modify the gentx directly, it will cost you spot in this testnet. If you need change something - create a new one gentx, but do not forget to remove the old one
-#### ⚠️ Do not change the stake amount, it will cost you spot in this testnet.
+#### ⚠️ Do not modify the gentx directly, it will cost you spot in this testnet. If you need change something - create a new gentx, but do not forget to remove the old one
+#### ⚠️ Do not change the stake amount, it will cost you spot in this week 5.
 ```bash
 umeed gentx wallet 10000000uumee --chain-id=umee-alpha-mainnet-3 --moniker="$UMEE_INTERNAL_MONIKER"
 ```
