@@ -17,7 +17,9 @@ rly version
 RLY_CONFIG_PATH="$HOME/relayer/interchain/chains"
 ```
 3. Initialize the relayer's configuration.
+```bash
 rly config init
+```
 4. Add Juno (uni-1) and Umee (umee-alpha-mainnet-3) chain configurations to the relayer's configuration:
   - Umee:
   ```bash
