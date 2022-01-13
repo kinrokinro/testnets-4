@@ -70,7 +70,7 @@ rly q balance uni-1
 ```bash
 rly paths generate uni-1 umee-alpha-mainnet-3 transfer --port=transfer
 ```
-9. (Optional) Open a channel for relaying:
+9. **(Optional)** Open a channel for relaying:
 ```bash
 rly tx link transfer --debug
 ```
