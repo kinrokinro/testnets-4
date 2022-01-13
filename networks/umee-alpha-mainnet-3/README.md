@@ -1,6 +1,6 @@
 # Umee Gravity Wars Testnet Week 5(`umee-alpha-mainnet-3`)
 
-#War Zone!
+# War Zone!
 
 ## Hardware Requirements
 * **Minimum**
