@@ -90,6 +90,11 @@ rly tx transfer uni-1 umee-alpha-mainnet-3 1000ujunox $(rly keys show umee-alpha
 rly start transfer
 ```
 Output should be like:
+**⚠️ Save these hashes, you will need them to fill out the form**
+> ✔ [uni-1]@{62165} - msg(0:/ibc.core.client.v1.MsgUpdateClient,1:/ibc.core.channel.v1.MsgRecvPacket) hash(**D413E1DEC6646947C73609685B2672ED3731D2BFC34388D21E22ECEC4CD34EB6**) 
+
+> ✔ [umee-alpha-mainnet-2]@{386173} - msg(0:/ibc.core.client.v1.MsgUpdateClient,1:/ibc.core.channel.v1.MsgRecvPacket) hash(**B881212DCD5736E3CC14E422BBC6C5CA9066E81A002FE447EADD600E11D2BD26**)
+
 > ★ Relayed 1 packets: [uni-1]port{transfer}->[umee-alpha-mainnet-3]port{transfer}
 
 > ★ Relayed 1 packets: [umee-alpha-mainnet-3]port{transfer}->[uni-1]port{transfer}
