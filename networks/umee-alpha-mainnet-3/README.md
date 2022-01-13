@@ -124,5 +124,6 @@ umeed gentx wallet 10000000uumee --chain-id=umee-alpha-mainnet-3 --moniker="$UME
 - orchestrator ETH address (DO NOT reuse old orchestrator ETH address!! create new one)
 - second set of wallets for transactions: umee wallet and ETH wallet
 ### 3.2 Network is planned to start on 17th of January 12:01 UTC
-### 3.3 Upon the start participants will get delegations
+### 3.3 Genesis.json should be available for download on Saturday
+### 3.4 Upon the start participants will get delegations
 ## 4. Tasks will be announced on the discord, follow announcements!
