@@ -1,4 +1,4 @@
-# Umee Gravity Wars Testnet (`umee-alpha-mainnet-3`)
+# Umee Gravity Wars Testnet Week 5(`umee-alpha-mainnet-3`)
 
 ## Hardware Requirements
 * **Minimum**
@@ -10,8 +10,11 @@
   * 600 GB SSD
   * 6 vCPU
 
-## Installation Steps
-### Install `go`
+## 1. Umeed Installation Steps
+
+If you already have umeed installed, you may proceed to Step 2.
+
+### 1.1 Install `go`
 #### Method 1 (recomended):
 ```bash
 cd $HOME
@@ -35,13 +38,13 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile &
 go version
 ```
 
-### Install essentials:
+### 1.2 Install essentials:
 ```bash
 cd $HOME
 sudo apt update
 sudo apt install make build-essential git jq ncdu bsdmainutils nload -y < "/dev/null"
 ```
-### Install `umeed`:
+### 1.3 Install `umeed`:
 ```bash
 cd $HOME
 rm -r $HOME/umee
@@ -53,7 +56,7 @@ make build
 cp $HOME/umee/build/umeed /usr/local/bin
 umeed version
 ```
-### Install `peggo`:
+### 1.4 Install `peggo`:
 ```bash
 cd $HOME
 rm -r $HOME/peggo
@@ -64,29 +67,31 @@ git checkout tags/v0.1.1
 make install
 peggo version
 ```
-### Create keys
-#### ⚠️ You can use your old keys
+## 2. Gravity Wars Week 5 genesis
+### 2.1 Create keys.
+#### ⚠️ You can use your old keys from weeks 1-4 if you want to
 ```bash
 umeed keys add wallet
 ```
-### Create genesis:
+### 2.2 Create genesis.json
 ```bash
 UMEE_INTERNAL_MONIKER=$(hostname) # or what you prefer
 umeed init --overwrite $UMEE_INTERNAL_MONIKER --chain-id umee-alpha-mainnet-3
 ```
-### Create genesis account
-#### ⚠️ Do not change the initial balance, it will cost you spot in this week 5.
+### 2.3 Create genesis account
+#### ⚠️ Do not change the initial balance, it will cost you spot in week 5 competition.
 ```bash
 umeed add-genesis-account wallet 11000000uumee
 ```
-### Create gentx
-#### ⚠️ Do not modify the gentx directly, it will cost you spot in this testnet. If you need change something - create a new gentx, but do not forget to remove the old one
-#### ⚠️ Do not change the stake amount, it will cost you spot in this week 5.
+### 2.4 Create gentx
+#### ⚠️ Do not modify the gentx directly, it may get corrupted and will be excluded from the genesis costing you spot in week 5.
+If you need to change something - create new gentx, but do not forget to remove the old one from the repo
+#### ⚠️ Do not change the stake amount in genesis, it will cost you spot in week 5 competition.
 ```bash
 umeed gentx wallet 10000000uumee --chain-id=umee-alpha-mainnet-3 --moniker="$UMEE_INTERNAL_MONIKER"
 ```
-### Submit gentx
-- Fork [the testnets repo](https://github.com/umee-network/testnets) into your Github account
+### 2.5 Submit gentx
+- Fork [the testnets repo](https://github.com/umee-network/testnets) to your Github account
 
 - Clone your repo using
 
@@ -109,3 +114,13 @@ umeed gentx wallet 10000000uumee --chain-id=umee-alpha-mainnet-3 --moniker="$UME
   git push origin main
   ```
 - Create a PR onto https://github.com/umee-network/testnets
+
+## 3. Onboarding
+### 3.1 Follow discord announcements and submit Google form, including
+- umee validator operator address
+- validator and orchestrator umee address
+- orchestrator ETH address (DO NOT reuse old orchestrator ETH address!! create new one)
+- second set of wallets for transactions: umee wallet and ETH wallet
+### 3.2 Network is planned to start on 17th of January 12:01 UTC
+### 3.3 Upon the start participants will get delegations
+## 4. Tasks will be announced on the discord, follow announcements!
