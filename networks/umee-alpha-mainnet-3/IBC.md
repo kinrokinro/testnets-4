@@ -49,12 +49,12 @@ rly config init
   ```
 5. Either import or create new keys for the relayer to use when signing and relaying transactions.
 ```bash
-rly keys add umee-alpha-mainnet-2 test-key
+rly keys add umee-alpha-mainnet-3 test-key
 rly keys add uni-1 test-key
 ```
 **or**
 ```bash
-rly keys restore umee-alpha-mainnet-2 test-key "YOUR_MNEMONIC"
+rly keys restore umee-alpha-mainnet-3 test-key "YOUR_MNEMONIC"
 rly keys restore uni-1 test-key "YOUR_MNEMONIC"
 ```
 6. Both relayer accounts need to funded with tokens in order to successfully sign and relay transactions between the IBC-connected networks.
@@ -80,7 +80,7 @@ Output should be:
 > 0: transfer             -> chns(✔) clnts(✔) conn(✔) chan(✔) (uni-1:transfer<>umee-alpha-mainnet-3:transfer)
 11. Create IBC transactions:
 ```bash
-rly tx transfer umee-alpha-mainnet-2 uni-1 1500uumee $(rly keys show uni-1 test-key) --path transfer
+rly tx transfer umee-alpha-mainnet-3 uni-1 1500uumee $(rly keys show uni-1 test-key) --path transfer
 rly tx transfer uni-1 umee-alpha-mainnet-3 1000ujunox $(rly keys show umee-alpha-mainnet-3 test-key) --path transfer
 ```
 12. Start the relayer:
